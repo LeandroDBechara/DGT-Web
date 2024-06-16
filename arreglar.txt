@@ -1,0 +1,2 @@
+En admin: 
+no se eliminan los documentos
