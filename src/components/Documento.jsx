@@ -8,7 +8,7 @@ function Documento({ doc }) {
   return (
     <div className="marco">
       <div className="docu">
-      <button className="bDoc" onClick={() => mostrarDoc(doc.id)}>{doc.nombre}<IconChevronDown className="flecha"/></button>
+      <button className="bDoc" onClick={() => mostrarDoc(doc.id)}><p>{doc.nombre}</p><IconChevronDown className="flecha"/></button>
       </div>
       <div id={doc.id} className="documento">
         <iframe  src={doc.pdf}></iframe>

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: #ddf6fe;
-  width: 50svb;
+  width: 58svb;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 20px;
@@ -30,9 +30,11 @@
   border-radius: 10px;
   background: #00a7dd;
   width:50%;
-  height: 30px;
   flex-shrink: 0;
   margin: 20px;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #000;
+  
 }
 
 .tabla{
@@ -43,10 +45,13 @@
   background: #ddf6fe;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position:absolute;
   top: 20%;
   margin: 20px;
-
+  width: 80%;
+}
+.tabla h1{
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .tabla2{
@@ -63,4 +68,7 @@
   border: 1px solid #000;
   text-align: center;
   height: 20px;
+}
+tbody{
+  text-align: center;
 }

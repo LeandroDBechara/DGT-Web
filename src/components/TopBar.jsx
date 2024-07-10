@@ -5,9 +5,10 @@ function TopBar() {
     <header>
     <nav>
       <div>
-        <a href="index.html"><img className="logo" src="src/assets/Logo.svg" alt="Logo" /></a>
-        
-        <p className="dgt">Dirección General de Transporte de Tucumán</p>
+        <a style={{color:"black", textDecoration: "none"}} href="index.html">
+          <img className="logo" src="src/assets/Logo.svg" alt="Logo" />
+          <p className="dgt">Dirección General de Transporte de Tucumán</p>
+        </a>
         <div className="line"></div>
       </div>
       <div className="menu">

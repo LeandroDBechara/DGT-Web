@@ -7,7 +7,7 @@ function Multa() {
   return (
     <div className="container">
       <div className="formulario">
-        <h1>Ingresa tus datos personales</h1>
+        <h1>Busqueda de infracciones</h1>
         <input
           className="ingre"
           id="dni"
@@ -25,7 +25,7 @@ function Multa() {
         </button>
       </div>
       <div className="tabla">
-        <h1>Multas encontradas</h1>
+        <h1>Infracciones encontradas</h1>
         <table className="tabla2">
           <thead>
             <tr>
@@ -37,6 +37,7 @@ function Multa() {
             </tr>
           </thead>
           <tbody>
+          {multas.length === 0 && <tr><td colSpan="5" style={{fontWeight: 'bold'}}>No posee infracciones / multas</td></tr>}
             {multas.map((multa) => (
               <tr>
                 <th>{multa.exp}</th>

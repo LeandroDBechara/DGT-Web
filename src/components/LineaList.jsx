@@ -20,7 +20,7 @@ function LineaList() {
       {results.map((linea) => (
         <Linea  key={linea.id} linea={linea} />
       ))}
-      <img id="mapa1" className="mapa" src={mapa} alt="mapa" />
+      <iframe id="mapa1" className="mapa" src={mapa} alt="mapa" ></iframe>
     </div>
   );
 }

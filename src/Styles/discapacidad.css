@@ -28,14 +28,17 @@ main{
 .horarios{
     display:flex;
     align-items:center;
-    
 }
 .horarios div{
     display:flex;
     flex-direction:column;
-    text-align: center;
-    
+    text-align:center;
+    width:50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
+
 .hor{
     display:flex;
     flex-direction:column;
