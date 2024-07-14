@@ -8,7 +8,7 @@ export const LineasContext = createContext();
 export function LineasContextProvider(props) {
   const [lineas, setLineas] = useState([]);
   const [search, setSearch] = useState("");
-  const [mapa, setMapa] = useState("");
+  const [mapa, setMapa] = useState([]);
   var results = [];
   let busca1 = document.getElementById("busca");
   useEffect(() => {
@@ -29,7 +29,9 @@ export function LineasContextProvider(props) {
 
   function maper(e) {
     {
-      setMapa(e.target.value);
+      
+      var json = JSON.parse(e.target.value);
+      setMapa(json);  
       const map = document.getElementById("mapa1");
       map.style.display = "block";
     }
