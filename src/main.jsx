@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Splide
           options={{
             rewind: true,
-            width: "100%",a
+            width: "100%",
             gap: "1px",
             type: "loop",
             autoplay: true,
