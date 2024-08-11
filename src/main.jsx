@@ -6,6 +6,8 @@ import TopBar from "./components/TopBar";
 import ButtonBar from "./components/ButtomBar";
 import "./Styles/main.css";
 
+import "@splidejs/react-splide/css";
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 
 // dar formato : alt +shift + f
 
@@ -16,9 +18,29 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <TaskContextProvider>
       <TopBar />
       <main>
-        <div className="imgdgt">
-          <img src="src/assets/colectivo.png" alt="" />
-        </div>
+        <Splide
+          options={{
+            rewind: true,
+            width: "100%",
+            gap: "1px",
+            type: "loop",
+            autoplay: true,
+            perPage: 2,
+            focus: "center",
+            arrows: false,
+            pagination: false,
+          }}
+        >
+          <SplideSlide>
+            <img className="carrusel" src="src/assets/colectivo.png" alt="Image 1" />
+          </SplideSlide>
+          <SplideSlide>
+            <img className="carrusel" src="src/assets/auto.png" alt="Image 2" />
+          </SplideSlide>
+          <SplideSlide>
+            <img className="carrusel" src="src/assets/direc2.jpg" alt="Image 3" />
+          </SplideSlide>
+        </Splide>
         <div className="sitios">
           <div className="sitio1">
             <a href="https://www.tucuman.gov.ar/">
