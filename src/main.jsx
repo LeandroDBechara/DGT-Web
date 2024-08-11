@@ -14,7 +14,7 @@ import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 /*<iframe src="https://www.google.com/maps/d/embed?mid=1OX0HEbWcr330MAuM18Ud8OR54mIw26w&ehbc=2E312F" width="640" height="480"></iframe>*/
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <React.StrictMode>d
     <TaskContextProvider>
       <TopBar />
       <main>
